@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'master' }
+    agent  {label 'master'}
     stages {
        stage('scm_checkout') {
           
@@ -21,6 +21,10 @@ pipeline {
                 archiveArtifacts artifacts: 'target/*.war', followSymlinks: false
             }
         }
+        stage('deploy'){
+            steps {
+               curl -uuser1:cmVmdGtuOjAxOjE3NDA4MDkwNzM6RmVTajNjanBkM3hFRVlkQ2szWm1RR1ZiYlRn -T target/Helloworldwebapp-dev.war "https://scanvas.jfrog.io/artifactory/webapp-1-generic-local/Helloworld.war"
+            }
+        }
     }
 }
-## this is pipeline script for Helloworldweb project #

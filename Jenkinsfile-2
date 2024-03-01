@@ -11,7 +11,7 @@ pipeline {
         stage('build') {
            
              steps {
-                    sh 'cp ./Helloworld.war /opt/tomcat/webapps/',
+                    sh 'cp ./Helloworld.war /opt/tomcat/webapps/'
                     sh '/opt/tomcat/bin/catalina.sh run'
                 }
         }

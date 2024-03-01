@@ -1,0 +1,4 @@
+curl -uuser1:cmVmdGtuOjAxOjE3NDA4MDkwNzM6RmVTajNjanBkM3hFRVlkQ2szWm1RR1ZiYlRn -T target/Helloworldwebapp-dev.war "https://scanvas.jfrog.io/artifactory/webapp-1-generic-local/Helloworld.war"
+
+
+curl -uuser1:cmVmdGtuOjAxOjE3NDA4MDk0ODU6bDdmeVhaSWwzRW1hNWlXdTlSOGZpOFM5Q3Y5 -L -O "https://scanvas.jfrog.io/artifactory/webapp-1-generic-local/Helloworld.war"
